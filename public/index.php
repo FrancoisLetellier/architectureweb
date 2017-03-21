@@ -1,4 +1,5 @@
 <?php
+require "../config/credentials.php";
 require "../src/routeManager.php";
 require "../src/bddManager.php";
 require "../src/userManager.php";
@@ -24,7 +25,7 @@ $conn = getConnection();
         <?php
             switch ($page){
                 case 'index' :
-                    echo 'Home page';
+                    echo 'Homepage';
                     break;
                 case 'contact':
                     echo 'Contactez-nous';
@@ -47,7 +48,7 @@ $conn = getConnection();
         </div>
     </main>
     <footer>
-        <?php include "../inc/footer.php"; ?>
+            <?php include "../inc/footer.php"; ?>
     </footer>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

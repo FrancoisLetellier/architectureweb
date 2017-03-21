@@ -6,6 +6,12 @@
  * Time: 11:28
  */
 
+    public function __construct()
+{
+    require "../config/credentials.php";
+}
+
+
 function getConnection()
 {
     require "../config/credentials.php";
